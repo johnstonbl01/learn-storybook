@@ -1,7 +1,11 @@
 import React from 'react';
 import Button from '../Button/Button';
+import Center from '../../../.storybook/Center';
 
-export default { title: 'Button' };
+export default {
+  title: 'Button',
+  decorators: [storyFn => <Center>{storyFn()}</Center>]
+};
 
 export const withText = () => (
   <Button>
