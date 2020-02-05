@@ -1,16 +1,22 @@
 import React from 'react';
 import { action } from '@storybook/addon-actions';
+import { withKnobs, text, boolean } from '@storybook/addon-knobs';
 import Button from '../Button/Button';
 import Center from '../../../.storybook/Center';
 
 export default {
   title: 'Button',
-  decorators: [storyFn => <Center>{storyFn()}</Center>]
+  decorators: [storyFn => <Center>{storyFn()}</Center>, withKnobs]
 };
 
 export const withText = () => (
-  <Button onClick={action('button-click')}>
-    <span>Click me!</span>
+  <Button
+    onClick={action('button-click')}
+    disabled={boolean('Disabled', false)}
+    color={text('Button Color', '#0A0183')}
+    textColor={text('Text Color', '#FFF')}
+  >
+    <span>{text('Button Text', 'Click Me!')}</span>
   </Button>
 );
 
