@@ -1,0 +1,26 @@
+.textinput--outline {
+  border: 1px solid #000;
+}
+
+.textinput--layout {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.textinput--edit {
+  border: 1px solid #cdcdcd;
+}
+
+input {
+  flex: 1;
+  border: none;
+  border-radius: 8px;
+  padding: 8px;
+  font-size: 24px;
+  padding: 16px;
+}
+
+input:focus {
+  outline: none;
+}
