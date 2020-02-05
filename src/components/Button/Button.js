@@ -1,6 +1,10 @@
 import React from 'react';
 import './Button.css';
 
+/**
+ *
+ * This is the best and most complicated component ever
+ */
 const Button = ({
   onClick,
   children,

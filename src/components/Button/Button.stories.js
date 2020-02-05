@@ -6,7 +6,8 @@ import Center from '../../../.storybook/Center';
 
 export default {
   title: 'Button',
-  decorators: [storyFn => <Center>{storyFn()}</Center>, withKnobs]
+  decorators: [storyFn => <Center>{storyFn()}</Center>, withKnobs],
+  component: Button
 };
 
 export const withText = () => (
