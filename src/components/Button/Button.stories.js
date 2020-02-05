@@ -1,4 +1,5 @@
 import React from 'react';
+import { action } from '@storybook/addon-actions';
 import Button from '../Button/Button';
 import Center from '../../../.storybook/Center';
 
@@ -8,13 +9,13 @@ export default {
 };
 
 export const withText = () => (
-  <Button>
+  <Button onClick={action('button-click')}>
     <span>Click me!</span>
   </Button>
 );
 
 export const withIcon = () => (
-  <Button>
+  <Button onClick={action('button-click')}>
     <svg
       aria-hidden="true"
       data-prefix="fas"
